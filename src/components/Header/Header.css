@@ -1,0 +1,101 @@
+.h-wrapper {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: rgba(15, 15, 15, 1);
+  height: 122px;
+  width: 1438px;
+  left: 1px;
+  padding: 16px 20px;
+  gap: 0px;
+  opacity: 0px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid rgb(85, 85, 85);
+  box-shadow: 0px 12px 20px -9px rgba(136, 160, 255, 0.25);
+}
+
+.h-container {
+  width: 1355px;
+  height: 61px;
+  gap: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.h-left {
+  width: 406px;
+  height: 49px;
+  padding: 26.65px 23px;
+  gap: 7.69px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 0px;
+  font-weight: 500;
+}
+
+.left-product {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+.h-right {
+  width: 355.26px;
+  height: 61px;
+  gap: 12px;
+  opacity: 0px;
+  display: flex;
+  /* gap: 1rem; */
+  color: rgb(113, 111, 111);
+}
+
+.h-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 293.26px;
+  height: 61px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 1.3rem;
+}
+
+.link-learn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 131.63px;
+  height: 61px;
+  padding: 16px 20px;
+  gap: 10px;
+  opacity: 0px;
+}
+
+.link-practice {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 161.63px;
+  height: 61px;
+  padding: 16px 20px;
+  gap: 10px;
+  opacity: 0px;
+}
+
+.h-user {
+  gap: 0px;
+  opacity: 0px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

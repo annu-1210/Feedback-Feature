@@ -1,0 +1,30 @@
+.m-wrapper {
+  color: white;
+  width: 832px;
+  height: 6066.59px;
+  position: absolute;
+  top: 250px;
+  left: 304px;
+  gap: 24px;
+  opacity: 0px;
+}
+
+.m-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-up {
+  width: 60%;
+}
+
+.m-mid {
+  width: 60%;
+}
+
+.m-down {
+  width: 60%;
+  margin-bottom: 3rem;
+}

@@ -1,0 +1,72 @@
+.fabNav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  background: transparent;
+}
+
+.fabNav-container-modalActive {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.3rem;
+  background: transparent;
+}
+
+.fabNav-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fabNav-icon-modalActive{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fab-spans {
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  width: fit-content;
+  background-color: white;
+  text-align: end;
+  border: none;
+  border-radius: 4px;
+}
+
+.fab-spans-modalActive{
+  display: none;
+}
+
+.fab-icons {
+  color: black;
+  background: var(--Main-White, rgba(248, 248, 248, 1));
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  gap: 8px;
+  border-radius: 30px;
+  opacity: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fab-icons-modalActive{
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  color: black;
+  background:rgba(248, 248, 248, 1);
+  border: 2px solid rgba(128, 128, 128, 1);
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  gap: 8px;
+  border-radius: 30px;
+  opacity: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+

@@ -1,0 +1,27 @@
+.icons-box {
+  background: transparent;
+  margin-top: 1rem;
+}
+
+.iconsbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.Icons-icons {
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Main-White, rgba(248, 248, 248, 1));
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
+  width: 52px;
+  height: 52px;
+  padding: 10.4px;
+  gap: 6.93px;
+  border-radius: 26px;
+  opacity: 0px;
+}
