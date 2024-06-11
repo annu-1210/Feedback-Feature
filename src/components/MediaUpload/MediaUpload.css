@@ -1,0 +1,28 @@
+.media-container{
+    width: 374px;
+    height: 50px;
+    padding: 0px 8px 0px 0px;
+    gap: 0px;
+    justify-content: space-between;
+    opacity: 0px;
+    align-items: center;
+}
+
+.fileDiv {
+  width: 102px;
+  height: 32px;
+  padding: 4px 10px 4px 4px;
+  gap: 0px;
+  border-radius: 4px;
+  opacity: 0px;
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(199, 199, 199, 1);
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
+}

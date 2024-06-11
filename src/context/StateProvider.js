@@ -3,9 +3,10 @@ import React from "react";
 import Context from "./Context.js";
 import DropDown from "../components/DropDown/DropDown.js";
 import { FaStarOfLife } from "react-icons/fa";
+import MediaUpload from "../components/MediaUpload/MediaUpload.js";
 
 const StateProvider = (props) => {
-  const [userLogin, setUserLogin] = useState(false);
+  const [userLogin, setUserLogin] = useState(true);
   const [showNav, setShowNav] = useState(false);
   const [modalVisiblity, setModalVisiblity] = useState(false);
   const [activeModal, setActiveModal] = useState(0);
@@ -14,8 +15,6 @@ const StateProvider = (props) => {
     setActiveModal(index);
     setModalVisiblity(true);
   };
-
-  const openIssueModal = () => {};
 
   const modalsContent = [
     {
@@ -42,6 +41,17 @@ const StateProvider = (props) => {
         >
           Describe the issue in detail
           <FaStarOfLife style={{ color: "rgb(244, 52, 52)" }} size={8} />
+        </div>
+      ),
+      attachment: (
+        <div
+          style={{
+            position: "relative",
+            top: "33px",
+            left: "10px",
+          }}
+        >
+          <MediaUpload />
         </div>
       ),
     },
@@ -79,6 +89,17 @@ const StateProvider = (props) => {
           <label>Send feedback anonymously</label>
         </div>
       ),
+      attachment: (
+        <div
+          style={{
+            position: "relative",
+            top: "33px",
+            left: "10px",
+          }}
+        >
+          <MediaUpload />
+        </div>
+      ),
     },
 
     {
@@ -105,6 +126,17 @@ const StateProvider = (props) => {
         >
           Describe the suggestion in detail
           <FaStarOfLife style={{ color: "rgb(244, 52, 52)" }} size={8} />
+        </div>
+      ),
+      attachment: (
+        <div
+          style={{
+            position: "relative",
+            top: "33px",
+            left: "10px",
+          }}
+        >
+          <MediaUpload />
         </div>
       ),
     },
@@ -246,6 +278,17 @@ const StateProvider = (props) => {
           />
         </div>
       ),
+      attachment: (
+        <div
+          style={{
+            position: "relative",
+            top: "33px",
+            left: "10px",
+          }}
+        >
+          <MediaUpload />
+        </div>
+      ),
     },
     {
       header: (
@@ -302,6 +345,17 @@ const StateProvider = (props) => {
               color: "rgba(128, 128, 128, 1)",
             }}
           />
+        </div>
+      ),
+      attachment: (
+        <div
+          style={{
+            position: "relative",
+            top: "33px",
+            left: "10px",
+          }}
+        >
+          <MediaUpload />
         </div>
       ),
     },
@@ -379,6 +433,17 @@ const StateProvider = (props) => {
           />
         </div>
       ),
+      attachment: (
+        <div
+          style={{
+            position: "relative",
+            top: "33px",
+            left: "10px",
+          }}
+        >
+          <MediaUpload />
+        </div>
+      ),
     },
     {
       header: (
@@ -404,7 +469,10 @@ const StateProvider = (props) => {
             opacity: "0px",
           }}
         >
-          <label style={{display:'flex', alignItems:'center',gap:'8px'}}>Your Name <FaStarOfLife style={{ color: "rgb(244, 52, 52)" }} size={8} /></label>
+          <label style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            Your Name{" "}
+            <FaStarOfLife style={{ color: "rgb(244, 52, 52)" }} size={8} />
+          </label>
           <input
             type="text"
             placeholder="Enter your Name"
@@ -444,7 +512,10 @@ const StateProvider = (props) => {
             opacity: "0px",
           }}
         >
-          <label style={{display:'flex', alignItems:'center',gap:'8px'}}>Your Email <FaStarOfLife style={{ color: "rgb(244, 52, 52)" }} size={8} /></label>
+          <label style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            Your Email{" "}
+            <FaStarOfLife style={{ color: "rgb(244, 52, 52)" }} size={8} />
+          </label>
           <input
             type="email"
             placeholder="Enter your Email"
@@ -484,7 +555,10 @@ const StateProvider = (props) => {
             opacity: "0px",
           }}
         >
-          <label style={{display:'flex', alignItems:'center',gap:'8px'}}>Your Mobile number <FaStarOfLife style={{ color: "rgb(244, 52, 52)" }} size={8} /></label>
+          <label style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            Your Mobile number{" "}
+            <FaStarOfLife style={{ color: "rgb(244, 52, 52)" }} size={8} />
+          </label>
           <input
             type="number"
             placeholder="Enter your number"
