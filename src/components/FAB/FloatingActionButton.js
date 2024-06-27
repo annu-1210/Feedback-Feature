@@ -14,7 +14,7 @@ function FloatingActionButton() {
       <div className="fab-container">
         {!showNav ? (
           <div className="fab-button">
-            <FaFileSignature size={40} onClick={() => setShowNav(true)} />
+            <FaFileSignature size={50} onClick={() => setShowNav(true)} />
           </div>
         ) : (
           <div className="fab-button-cancel">

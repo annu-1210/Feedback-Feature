@@ -1,19 +1,13 @@
-.card-wrapper {
-  position: fixed;
-  bottom: 112px;
-  left: 978px;
-}
-
 .card-container {
-  /* background: transparent; */
   color: black;
-  width: 430px;
+  width: 330px;
   max-height: 734px;
-  position: relative;
-  bottom: 0;
-  right: 0;
-  padding: 24px 16px 24px 16px;
-  gap: 32px;
+  position: fixed;
+  z-index: 1;
+  bottom: 6rem;
+  right: 2rem;
+  padding: 1.5rem 1rem ;
+  gap: 2rem;
   border-radius: 8px;
   opacity: 0px;
   background: rgba(248, 248, 248, 1);

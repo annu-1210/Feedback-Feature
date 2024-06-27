@@ -1,18 +1,10 @@
-/* .fab-wrapper{
-  background-color: brown;
-  width: 100%;
-  height: 100vh;
-} */
-
 .fab-container {
   width: 256px;
   height: 380px;
   position: fixed;
-  top: 612px;
-  left: 1152px;
-  bottom: 32px;
-  right: 32px;
-  gap: 32px;
+  bottom: 2rem;
+  right: 2rem;
+  gap: 2rem;
   opacity: 0px;
 }
 
@@ -24,9 +16,9 @@
   color: black;
   background: var(--Main-White, rgba(248, 248, 248, 1));
   box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
-  width: 60px;
-  height: 60px;
-  padding: 15px 10px 11px 18px;
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem 0.6rem 0.5rem 0.8rem;
   gap: 8px;
   position: absolute;
   bottom: 0px;
@@ -42,12 +34,12 @@
   color: black;
   background: var(--Main-White, rgba(248, 248, 248, 1));
   box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
-  width: 60px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 60px;
-  padding: 12px;
+  padding: 0.5rem;
   gap: 8px;
   border-radius: 30px;
   opacity: 0px;
@@ -58,17 +50,16 @@
 
 .fabNav-section-box {
   position: fixed;
-  top: 612px;
-  left: 1152px;
-  width: 256px;
+  bottom: 5.2rem;
+  right: 2rem;
 }
 
-.fabNav-section-box-ModalActive{
+.fabNav-section-box-ModalActive {
   display: none;
 }
 
 .FAB-Navigation-menu {
   position: fixed;
-  bottom: 32px;
-  left: 1020px;
+  bottom: 2rem;
+  right: 5.5rem;
 }

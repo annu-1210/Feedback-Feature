@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import "./FabModal.css";
 import { HiFlag } from "react-icons/hi2";
-import { HiThumbUp } from "react-icons/hi";
-import { HiHandThumbDown } from "react-icons/hi2";
+import { MdThumbsUpDown } from "react-icons/md";
 import { TbTextPlus } from "react-icons/tb";
 import { RiQuestionAnswerFill } from "react-icons/ri";
 import Context from "../../context/Context";
@@ -58,9 +57,8 @@ function FabModal() {
         >
           Share Feedback
         </span>
-        <div className="thumb-icon fab-icons">
-          <HiThumbUp />
-          <HiHandThumbDown />
+        <div className="fab-icons">
+          <MdThumbsUpDown size={40}/>
         </div>
       </div>
       <div

@@ -1,57 +1,49 @@
-.ans-wrapper{
-    margin-top: 1.7rem;
-    margin-bottom: 1.7rem;
-}
-
 .ans-container {
-  width: 832px;
-  height: 43px;
+  background: transparent;
+  color: white;
+  width: 60%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   gap: 0px;
   opacity: 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .a-left {
-  width: 832px;
-  height: 43px;
+  width: 100%;
   gap: 0px;
   justify-content: space-between;
   opacity: 0px;
-  font-family: Poppins;
-  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 2rem;
   text-align: left;
 }
 
 .a-right {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  width: 208.08px;
-  height: 43px;
-  gap: 11px;
+  width: 100%;
+  gap: 0.7rem;
   opacity: 0px;
 }
 
 .sorting-span {
-  width: 69px;
-  height: 22px;
   gap: 0px;
   opacity: 0px;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
-  line-height: 21.78px;
   text-align: left;
 }
 
 .mid-button {
-  width: 128.08px;
-  height: 43px;
-  padding: 8px 16px;
-  gap: 10px;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
   opacity: 0px;
   border: none;
@@ -60,5 +52,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
 }

@@ -21,7 +21,7 @@ function Header() {
             </div>
           </div>
           <div className="h-user">
-            <img src="./user-logo.png" alt="logo" width={50} />
+            <img src="./user-logo.png" alt="logo" width={40} />
           </div>
         </div>
       </div>
