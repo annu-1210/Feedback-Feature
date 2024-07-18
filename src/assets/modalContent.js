@@ -99,12 +99,12 @@ const modalsContent = [
       </div>
     ),
     name: (
-      <div className="name-div">
+      <div className="name-email-mobile-div">
         <label>Your Name </label>
         <input
           type="text"
           placeholder="Enter your Name"
-          className="name-input"
+          className="name-email-mobile-input"
         />
       </div>
     ),
@@ -175,7 +175,7 @@ const modalsContent = [
         <input
           type="text"
           placeholder="Enter your Name"
-          className="name-email-input"
+          className="name-email-mobile-input"
         />
       </div>
     ),
@@ -187,7 +187,7 @@ const modalsContent = [
         <input
           type="email"
           placeholder="Enter your Email"
-          className="name-email-input"
+          className="name-email-mobile-input"
         />
       </div>
     ),

@@ -26,9 +26,7 @@ function Card() {
         </div>
         <div className="card-main">
           <form>
-            <div className="name-field">
-              {modalsContent[activeModal].name}
-            </div>
+            <div className="name-field">{modalsContent[activeModal].name}</div>
             <div className="email-field">
               {modalsContent[activeModal].email}
             </div>
@@ -48,7 +46,6 @@ function Card() {
                   name="textarea"
                   id="textarea"
                   rows="5"
-                  cols="20"
                   className="text-section"
                   placeholder="Write here..."
                   value={textareaValue}
@@ -66,19 +63,21 @@ function Card() {
               {modalsContent[activeModal].emailVerify}
             </div>
             <div>{modalsContent[activeModal].content}</div>
-            <button
-              type="submit"
-              className="form-button"
-              onClick={handleSubmit}
-              disabled={!textareaValue}
-              style={{
-                backgroundColor: textareaValue
-                  ? "rgba(15, 15, 15, 1)"
-                  : "rgb(146, 146, 146)",
-              }}
-            >
-              Submit
-            </button>
+            <div className="button-div">
+              <button
+                type="submit"
+                className="form-button"
+                onClick={handleSubmit}
+                disabled={!textareaValue}
+                style={{
+                  backgroundColor: textareaValue
+                    ? "rgba(15, 15, 15, 1)"
+                    : "rgb(146, 146, 146)",
+                }}
+              >
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </div>

@@ -157,3 +157,9 @@
   line-height: 1.5rem;
   text-align: left;
 }
+
+@media (max-width: 1025px) {
+  .first-container {
+    width: 70%;
+  }
+}

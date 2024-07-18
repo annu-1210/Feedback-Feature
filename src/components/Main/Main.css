@@ -29,3 +29,9 @@
   width: 60%;
   margin-bottom: 3rem;
 }
+
+@media (max-width:1024px) {
+  .m-mid {
+    width: 70%;
+  }
+}

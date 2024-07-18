@@ -34,8 +34,8 @@
   color: black;
   background: var(--Main-White, rgba(248, 248, 248, 1));
   box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -50,7 +50,7 @@
 
 .fabNav-section-box {
   position: fixed;
-  bottom: 5.2rem;
+  bottom: 6.2rem;
   right: 2rem;
 }
 
@@ -61,5 +61,5 @@
 .FAB-Navigation-menu {
   position: fixed;
   bottom: 2rem;
-  right: 5.5rem;
+  right: 6rem;
 }
