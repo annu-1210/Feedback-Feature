@@ -19,32 +19,25 @@ const modalComponents = [
         />
       </div>
     ),
-  },
-  {
     suggestionTextareaHead: (
       <div className="textareaHead-div">
         Describe the suggestion in detail
         <FaStarOfLife className="red-star-icon" size={8} />
       </div>
     ),
-  },
-  {
+
     issueTextareaHead: (
       <div className="textareaHead-div">
         Describe the issue in detail
         <FaStarOfLife className="red-star-icon" size={8} />
       </div>
     ),
-  },
-  {
     contactTextareaHead: (
       <div className="textareaHead-div">
         What would you like to ask?
         <FaStarOfLife className="red-star-icon" size={8} />
       </div>
     ),
-  },
-  {
     attachment: (
       <div className="attachment-div">
         <MediaUpload />
@@ -62,8 +55,8 @@ const modalsContent = [
       </div>
     ),
     dropdown: <DropDown />,
-    textareaHead: modalComponents.issueTextareaHead,
-    attachment: modalComponents.attachment,
+    textareaHead: modalComponents[0].issueTextareaHead,
+    attachment: modalComponents[0].attachment,
   },
   {
     header: (
@@ -83,7 +76,7 @@ const modalsContent = [
         <label>Send feedback anonymously</label>
       </div>
     ),
-    attachment: modalComponents.attachment,
+    attachment: modalComponents[0].attachment,
   },
 
   {
@@ -95,8 +88,8 @@ const modalsContent = [
     ),
 
     dropdown: <DropDown />,
-    textareaHead: modalComponents.suggestionTextareaHead,
-    attachment: modalComponents.attachment,
+    textareaHead: modalComponents[0].suggestionTextareaHead,
+    attachment: modalComponents[0].attachment,
   },
   {
     header: (
@@ -115,7 +108,7 @@ const modalsContent = [
         />
       </div>
     ),
-    textareaHead: modalComponents.contactTextareaHead,
+    textareaHead: modalComponents[0].contactTextareaHead,
   },
   {
     header: (
@@ -125,9 +118,9 @@ const modalsContent = [
       </div>
     ),
     dropdown: <DropDown />,
-    textareaHead: modalComponents.issueTextareaHead,
-    emailVerify: modalComponents.emailVerify,
-    attachment: modalComponents.attachment,
+    textareaHead: modalComponents[0].issueTextareaHead,
+    emailVerify: modalComponents[0].emailVerify,
+    attachment: modalComponents[0].attachment,
   },
   {
     header: (
@@ -151,7 +144,7 @@ const modalsContent = [
         />
       </div>
     ),
-    attachment: modalComponents.attachment,
+    attachment: modalComponents[0].attachment,
   },
 
   {
@@ -163,9 +156,9 @@ const modalsContent = [
     ),
 
     dropdown: <DropDown />,
-    textareaHead: modalComponents.suggestionTextareaHead,
-    emailVerify: modalComponents.emailVerify,
-    attachment: modalComponents.attachment,
+    textareaHead: modalComponents[0].suggestionTextareaHead,
+    emailVerify: modalComponents[0].emailVerify,
+    attachment: modalComponents[0].attachment,
   },
   {
     header: (
@@ -210,7 +203,7 @@ const modalsContent = [
         />
       </div>
     ),
-    textareaHead: modalComponents.contactTextareaHead,
+    textareaHead: modalComponents[0].contactTextareaHead,
   },
 ];
 
