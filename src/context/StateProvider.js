@@ -4,7 +4,7 @@ import Context from "./Context.js";
 import modalsContent from "../assets/modalContent.js";
 
 const StateProvider = (props) => {
-  const [userLogin, setUserLogin] = useState(false);
+  const [userLogin, setUserLogin] = useState(true);
   const [showNav, setShowNav] = useState(false);
   const [modalVisiblity, setModalVisiblity] = useState(false);
   const [activeModal, setActiveModal] = useState(0);
