@@ -1,28 +1,69 @@
 .media-container {
   width: 374px;
-  height: 50px;
-  padding: 0px 8px 0px 0px;
-  gap: 0px;
-  justify-content: space-between;
-  opacity: 0px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upload-content {
+  display: flex;
   align-items: center;
+  gap: 12px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .fileDiv {
-  width: 102px;
+  min-width: 102px;
   height: 32px;
-  padding: 4px 10px 4px 4px;
-  gap: 0px;
+  padding: 4px 10px;
   border-radius: 4px;
-  opacity: 0px;
   display: flex;
-  margin-top: 0.5rem;
-  justify-content: flex-start;
   align-items: center;
+  gap: 8px;
   background-color: rgba(199, 199, 199, 1);
   font-family: "Poppins", sans-serif;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 19px;
-  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.file-preview {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.file-name {
+  flex: 1;
+  font-size: 14px;
+  color: #1e293b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.remove-file {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.remove-file:hover {
+  color: #ef4444;
 }

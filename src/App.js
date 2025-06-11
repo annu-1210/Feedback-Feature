@@ -5,6 +5,7 @@ import SignUp from "./components/Authentication/SignUp";
 import Main from "./components/Main/Main";
 import { auth } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
+import StateProvider from "./context/StateProvider";
 
 function App() {
   const [user] = useAuthState(auth);
@@ -17,19 +18,21 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={
-            <ProtectedRoute>
-              <Main />
-            </ProtectedRoute>
-          } />
-          <Route path="/login" element={!user ? <LogIn /> : <Navigate to="/" replace />} />
-          <Route path="/signup" element={!user ? <SignUp /> : <Navigate to="/LogIn" replace />} />
-        </Routes>
-      </Router>
-    </div>
+    <StateProvider>
+      <div className="App">
+        <Router>
+          <Routes>
+            <Route path="/" element={
+              <ProtectedRoute>
+                <Main />
+              </ProtectedRoute>
+            } />
+            <Route path="/login" element={!user ? <LogIn /> : <Navigate to="/" replace />} />
+            <Route path="/signup" element={!user ? <SignUp /> : <Navigate to="/LogIn" replace />} />
+          </Routes>
+        </Router>
+      </div>
+    </StateProvider>
   );
 }
 

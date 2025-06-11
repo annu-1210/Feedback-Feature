@@ -1,35 +1,50 @@
-import React from "react";
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { CgAttachment } from "react-icons/cg";
 import "./MediaUpload.css";
 
-function MediaUpload() {
+function MediaUpload({ onFileSelect, selectedFile }) {
   const inputRef = useRef(null);
-  const [image, setImage] = useState("");
 
   const handleFileUpload = () => {
     inputRef.current.click();
   };
 
-  const handleImage = (e) => {
-    const file = e.target.files[0];
-    console.log(file);
-    setImage(e.target.files[0]);
+  const handleFile = (e) => {
+    const selectedFile = e.target.files[0];
+    if (selectedFile && onFileSelect) {
+      onFileSelect(selectedFile);
+    }
   };
 
   return (
     <div className="media-container">
-      <div className="fileDiv" onClick={handleFileUpload}>
-        {image ? (
-          <img src={URL.createObjectURL(image)} alt="file-logo" />
-        ) : null}
-        <CgAttachment /> <span>Attach</span>
-        <input
-          type="file"
-          ref={inputRef}
-          style={{ display: "none" }}
-          onChange={handleImage}
-        />
+      <div className="upload-content">
+        <div className="fileDiv" onClick={handleFileUpload}>
+          <CgAttachment /> <span>Attach</span>
+          <input
+            type="file"
+            ref={inputRef}
+            style={{ display: "none" }}
+            onChange={handleFile}
+            accept=".pdf,.doc,.docx,.txt,image/*"
+          />
+        </div>
+        {selectedFile && (
+          <div className="file-preview">
+            <span className="file-name" title={selectedFile.name}>{selectedFile.name}</span>
+            <button 
+              className="remove-file" 
+              onClick={(e) => {
+                e.stopPropagation();
+                if (onFileSelect) {
+                  onFileSelect(null);
+                }
+              }}
+            >
+              ×
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

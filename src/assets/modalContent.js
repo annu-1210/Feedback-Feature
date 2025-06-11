@@ -46,7 +46,7 @@ const modalComponents = [
   },
 ];
 
-const modalsContent = [
+export const modalsContent = [
   {
     header: (
       <div>
