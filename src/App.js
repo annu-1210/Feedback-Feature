@@ -1,21 +1,34 @@
-import AnswerDropdown from "./components/AnswerDropdown/AnswerDropdown";
-import BackSection from "./components/BackSection/BackSection";
-import FloatingActionButton from "./components/FAB/FloatingActionButton";
-import FirstBox from "./components/FirstBox/FirstBox";
-import Header from "./components/Header/Header";
-// import Main from "./components/Main/Main";
-import SecondBox from "./components/SecondBox/SecondBox";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import LogIn from "./components/Authentication/LogIn";
+import SignUp from "./components/Authentication/SignUp";
+import Main from "./components/Main/Main";
+import { auth } from "./firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 function App() {
+  const [user] = useAuthState(auth);
+
+  const ProtectedRoute = ({ children }) => {
+    if (!user) {
+      return <Navigate to="/login" replace />;
+    }
+    return children;
+  };
+
   return (
     <div className="App">
-      <Header />
-      <BackSection/>
-      <FirstBox/>
-      <AnswerDropdown/>
-      <SecondBox/>
-      {/* <Main /> */}
-      <FloatingActionButton />
+      <Router>
+        <Routes>
+          <Route path="/" element={
+            <ProtectedRoute>
+              <Main />
+            </ProtectedRoute>
+          } />
+          <Route path="/login" element={!user ? <LogIn /> : <Navigate to="/" replace />} />
+          <Route path="/signup" element={!user ? <SignUp /> : <Navigate to="/LogIn" replace />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

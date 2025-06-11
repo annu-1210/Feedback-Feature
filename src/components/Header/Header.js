@@ -1,8 +1,23 @@
 import React from "react";
 import "./Header.css";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
+import { auth } from "../../firebase";
+import { useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
 
 function Header() {
+  const navigate = useNavigate();
+  const user = auth.currentUser;
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate('/signup');
+    } catch (error) {
+      console.error('Error logging out:', error);
+    }
+  };
+
   return (
     <section className="h-wrapper">
       <div className="h-container">
@@ -21,7 +36,16 @@ function Header() {
             </div>
           </div>
           <div className="h-user">
-            <img src="./user-logo.png" alt="logo" width={40} />
+            <div className="user-dropdown">
+              <div className="user-icon">
+                <img src="./user-logo.png" alt="logo" width={40} />
+                <IoIosArrowDropdownCircle />
+              </div>
+              <div className="dropdown-content">
+                {user && <span className="user-name">{user.displayName}</span>}
+                <button onClick={handleLogout} className="logout-button">Logout</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
